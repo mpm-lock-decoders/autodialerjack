@@ -1,0 +1,17 @@
+{
+	"image": "mcr.microsoft.com/vscode/devcontainers/javascript-node",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"editorconfig.editorconfig",
+				"ritwickdey.liveserver",
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode",
+				"heybourn.headwind"
+			]
+		}
+	},
+
+	"onCreateCommand": ".devcontainer/postCreate.sh"
+}
