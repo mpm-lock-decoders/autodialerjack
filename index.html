@@ -13,17 +13,23 @@
       rel="stylesheet" />
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
   </head>
-  <body class="text-gray-900 bg-gray-500">
+  <body class="text-gray-900 bg-gray-500 dark:bg-gray-900 dark:text-gray-200">
     <!-- Navigation -->
     <header>
       <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
-        <div class="max-w-screen-xl px-4 mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between">
+        <div
+          class="flex flex-col max-w-screen-xl px-4 mx-auto lg:flex-row lg:items-center lg:justify-between">
           <div class="flex items-center justify-between w-full lg:w-auto">
             <!-- Logo -->
             <a href="#" class="flex items-center">
               <picture>
-                <source srcset="static/images/logo_web_dark.png" media="(prefers-color-scheme: dark)">
-                <img src="static/images/logo_web.png" alt="MPM Lock Decoders logo" class="h-6 mr-3 sm:h-9">
+                <source
+                  srcset="static/images/logo_web_dark.png"
+                  media="(prefers-color-scheme: dark)" />
+                <img
+                  src="static/images/logo_web.png"
+                  alt="MPM Lock Decoders logo"
+                  class="h-6 mr-3 sm:h-9" />
               </picture>
             </a>
             <!-- Mobile collapse toggle button -->
@@ -54,29 +60,96 @@
               <a
                 href="#"
                 class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
-                aria-current="page">Home</a>
+                aria-current="page"
+                >Home</a
+              >
             </li>
             <li>
               <a
                 href="#"
                 class="block py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 dark:text-gray-400 dark:hover:bg-gray-700">
-                Jack Plus</a>
+                Jack Plus</a
+              >
             </li>
             <li>
               <a
                 href="#"
                 class="block py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 dark:text-gray-400 dark:hover:bg-gray-700">
-                Jack Professional</a>
+                Jack Professional</a
+              >
             </li>
             <li>
               <a
                 href="#"
                 class="block py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 dark:text-gray-400 dark:hover:bg-gray-700">
-                Contact</a>
+                Contact</a
+              >
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative flex items-center min-h-screen text-white bg-black">
+      <!-- Background image -->
+      <div class="absolute inset-0">
+        <img
+          src="/static/images/MPM_3298_L-scaled.jpg"
+          alt="Autodialer Image"
+          class="object-cover w-full h-full" />
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+      </div>
+
+      <!-- Content wrapper -->
+      <div class="container relative z-10 px-4 py-16 mx-auto">
+        <div class="max-w-2xl">
+          <p class="mb-2 text-sm font-semibold tracking-wider uppercase">
+            A PROFESSIONAL TOOL FOR LOCKSMITHS AND SAFE TECHNICIANS
+          </p>
+
+          <h1 class="mb-4 text-5xl font-bold md:text-6xl">AUTODIALER JACK</h1>
+
+          <p class="mb-6 text-lg md:text-xl">
+            Autodialers JACK are advanced state-of-the-art autodialers used for
+            nondestructive opening of combination safe locks.
+          </p>
+
+          <button
+            class="px-6 py-3 text-white transition-colors duration-300 bg-red-600 rounded hover:bg-red-700">
+            See JACK in action
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="py-16">
+      <div class="container px-4 mx-auto">
+        <h2 class="mb-8 text-3xl font-bold text-center text-gray-900">
+          Watch JACK in Action
+        </h2>
+        <div class="flex justify-center">
+          <div class="w-full overflow-hidden rounded-lg aspect-video">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/BsiWqXXBxXo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section id="testimonial">
+
+    </section>
   </body>
 </html>
