@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autodialer JACK</title>
+    <link rel="stylesheet" href="/static/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+  </head>
+  <body class="text-gray-900 bg-white dark:bg-gray-900 dark:text-gray-200">
+    <!-- Navigation -->
+    <header>
+      <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+        <div
+          class="flex flex-col max-w-screen-xl px-4 mx-auto lg:flex-row lg:items-center lg:justify-between">
+          <div class="flex items-center justify-between w-full lg:w-auto">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+              <picture>
+                <source
+                  srcset="static/images/logo_web_dark.png"
+                  media="(prefers-color-scheme: dark)" />
+                <img
+                  src="static/images/logo_web.png"
+                  alt="MPM Lock Decoders logo"
+                  class="h-6 mr-3 sm:h-9" />
+              </picture>
+            </a>
+            <!-- Mobile collapse toggle button -->
+            <button
+              data-collapse-toggle="menu"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="menu"
+              aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+          <!-- Shared Menu for Desktop & Mobile -->
+          <ul
+            id="menu"
+            class="hidden w-full mt-2 space-y-2 font-medium lg:flex lg:w-auto lg:flex-row lg:space-x-8 lg:mt-0">
+            <li>
+              <a
+                href="/index.html"
+                class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/jack_plus.html"
+                class="block py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 dark:text-gray-400 dark:hover:bg-gray-700">
+                Jack Plus</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 dark:text-gray-400 dark:hover:bg-gray-700">
+                Jack Professional</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0 dark:text-gray-400 dark:hover:bg-gray-700">
+                Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Action -->
+    <section class="px-6 py-12 text-center">
+      <h2 class="text-4xl font-bold">JACK PLUS</h2>
+      <p class="text-lg italic text-gray-600">
+        “The new standard in opening combination locks”
+      </p>
+      <div class="flex flex-col items-center mt-6 md:flex-row">
+        <img
+          src="/static/images/jack_plus/MPM_3298_L-2-scaled.webp"
+          alt="Jack Plus"
+          class="w-full rounded-lg shadow-lg md:w-1/2" />
+        <div class="text-left md:ml-10">
+          <h3 class="text-2xl font-semibold text-red-600">$4,750 / €4,450</h3>
+          <p class="font-bold text-green-600">In stock</p>
+          <button
+            class="px-6 py-2 mt-4 text-white bg-red-600 rounded-lg hover:bg-red-700">
+            ORDER NOW
+          </button>
+          <p class="mt-2 text-gray-600">
+            Our team will contact you to finalize the order.
+          </p>
+          <p class="text-sm text-gray-500">Current shipping times: 1 week</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info tabs -->
+    <section class="px-6 py-10">
+      <h3 class="text-2xl font-bold text-center">Contents of the Set</h3>
+      <div class="w-full max-w-md mx-auto">
+        <!-- Tabs navigation -->
+        <ul class="flex border-b" id="tabs" data-tabs-toggle="#tabs-content" role="tablist">
+          <li class="mr-1" role="presentation">
+            <a
+              href="#tab1"
+              data-tabs-target="#tab1"
+              class="inline-block px-4 py-2 text-gray-600 hover:text-black focus:outline-none"
+              id="tab1-tab"
+              role="tab"
+              aria-controls="tab1"
+              aria-selected="true"
+            >
+              Contents
+            </a>
+          </li>
+          <li class="mr-1" role="presentation">
+            <a
+              href="#tab2"
+              data-tabs-target="#tab2"
+              class="inline-block px-4 py-2 text-gray-600 hover:text-black focus:outline-none"
+              id="tab2-tab"
+              role="tab"
+              aria-controls="tab2"
+              aria-selected="false"
+            >
+              Dialing Modes
+            </a>
+          </li>
+          <li class="mr-1" role="presentation">
+            <a
+              href="#tab3"
+              data-tabs-target="#tab3"
+              class="inline-block px-4 py-2 text-gray-600 hover:text-black focus:outline-none"
+              id="tab3-tab"
+              role="tab"
+              aria-controls="tab3"
+              aria-selected="false"
+            >
+              Supported Locks
+            </a>
+          </li>
+        </ul>
+        <!-- Tabs content -->
+        <div id="tabs-content">
+          <div id="tab1" class="hidden mt-4" role="tabpanel" aria-labelledby="tab1-tab">
+            <div class="p-4 rounded-lg shadow-md">
+              <h2 class="mb-2 text-lg font-semibold">The set contains:</h2>
+              <ul class="pl-4 space-y-1 list-disc list-inside">
+                  <li>control unit with a new OLED display and an improved high-quality motor and driver</li>
+                  <li>improved base with switchable magnets for an easy installation</li>
+                  <li>basic gripper – works for the majority of common dials (a gripper for uncommon large-diameter dials can be purchased separately)</li>
+                  <li>centering rings for easy installation</li>
+                  <li>screwdriver</li>
+                  <li>hex wrench</li>
+                  <li>user manual</li>
+                  <li>power supply</li>
+                  <li>suitcase</li>
+              </ul>
+
+              <h2 class="mt-4 mb-2 text-lg font-semibold">Optional accessories:</h2>
+              <ul class="pl-4 space-y-1 list-disc list-inside">
+                  <li>base extension for safes with elevated dials</li>
+                  <li>second gripper for extra large dials and dials below the surface of the safe</li>
+              </ul>
+          </div>
+          </div>
+          <div id="tab2" class="hidden mt-4" role="tabpanel" aria-labelledby="tab2-tab">
+            <div class="p-4 rounded-lg shadow-md">
+              <h2 class="mb-2 text-lg font-semibold">Dialing Modes:</h2>
+              <ul class="pl-4 space-y-1 list-disc list-inside">
+                  <li>All combinations (with a variable dialing step)</li>
+                  <li>Ranges of combinations specified for each dial separately (with a variable dialing step)</li>
+                  <li>Frequently used combinations containing multiples of 5 and 10</li>
+                  <li>Common factory default combinations</li>
+                  <li>Testing all single number combinations</li>
+                  <li>Dialing around a known combination</li>
+              </ul>
+          </div>
+          </div>
+          <div id="tab3" class="hidden mt-4" role="tabpanel" aria-labelledby="tab3-tab">
+            <div class="p-4 rounded-lg shadow-md">
+              <h2 class="mb-2 text-lg font-semibold">JACK supports all standard mechanical combination locks including:</h2>
+              <ul class="pl-4 space-y-1 list-disc list-inside">
+                  <li>LaGard (3330, 3332, 1985, 1947, 3370, 3390, 1548, 1800 and others)</li>
+                  <li>Sargent and Greenleaf (6730, 6731, 6741, 6770, 6630, 6631, 6651 and many more)</li>
+                  <li>Big Red (CDL-3, CDL-4, CDL-3M, CDL-4M)</li>
+                  <li>Chubb (Chubb 7L08, Chubb 7K64 and others)</li>
+                  <li>Kromer/Lebtig (3018, 3019, 3031, 3096, 3097, 3098 and others)</li>
+                  <li>Diebold (177-23 and others)</li>
+                  <li>Federal 800</li>
+                  <li>Ilco-Unican</li>
+                  <li>International 2000</li>
+                  <li>Bode-Panzer 106</li>
+                  <li>Mlocks ML6740 and ML6785</li>
+                  <li>Wittcopp 7800</li>
+                  <li>...</li>
+              </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+</html>
