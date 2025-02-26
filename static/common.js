@@ -39,3 +39,23 @@ themeToggleBtn.addEventListener('click', function() {
     }
 
 });
+
+// Function to update logo based on theme
+function updateLogo() {
+  const logo = document.getElementById('theme-logo');
+  if (document.documentElement.classList.contains('dark')) {
+    logo.src = 'static/images/logo_web_dark.png';
+  } else {
+    logo.src = 'static/images/logo_web.png';
+  }
+}
+
+// Update logo on page load
+document.addEventListener('DOMContentLoaded', updateLogo);
+
+// Update logo when theme toggle is clicked
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  // The theme toggle button already changes the dark class
+  // We just need to update the logo afterward
+  setTimeout(updateLogo, 50); // Small delay to ensure class changes have been applied
+});
