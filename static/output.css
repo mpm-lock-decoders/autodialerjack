@@ -1038,6 +1038,11 @@
       background-color: var(--color-gray-900);
     }
   }
+  .dark\:text-brand-red {
+    &:where(.dark, .dark *) {
+      color: #e41e31;
+    }
+  }
   .dark\:text-gray-200 {
     &:where(.dark, .dark *) {
       color: var(--color-gray-200);
@@ -1091,6 +1096,20 @@
     &:where(.dark, .dark *) {
       &:focus {
         --tw-ring-color: var(--color-gray-700);
+      }
+    }
+  }
+  .dark\:lg\:text-red-600 {
+    &:where(.dark, .dark *) {
+      @media (width >= 64rem) {
+        color: var(--color-red-600);
+      }
+    }
+  }
+  .lg\:dark\:text-brand-red {
+    @media (width >= 64rem) {
+      &:where(.dark, .dark *) {
+        color: #e41e31;
       }
     }
   }
